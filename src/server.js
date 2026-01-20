@@ -31,10 +31,10 @@ app.get('/notes', (req, res) => {
   });
 });
 
-app.get("/notes/:id", (req, res) => {
-    const { id } = req.params;
+app.get("/notes/:noteId", (req, res) => {
+    const { noteId } = req.params;
     res.status(200).json({
-        message: `Retrieved note with id: ${id}`,
+        message: `Retrieved note with id: ${noteId}`,
     });
 });
 
