@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BohdanKret/nodejs-hw.git"
+  },
+  "keywords": [],
+  "author": "Bohdan Kret <kretbohdan2002@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BohdanKret/nodejs-hw/issues"
+  },
+  "homepage": "https://github.com/BohdanKret/nodejs-hw#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "nodemon": "^3.1.11"
+  }
+}
