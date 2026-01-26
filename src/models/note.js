@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const noteShema = mongoose.Schema(
+const noteSchema = mongoose.Schema(
   {
     title: {
       type: String,
@@ -10,6 +10,7 @@ const noteShema = mongoose.Schema(
     content: {
       type: String,
       trim: true,
+      default: '',
     },
     tag: {
       type: String,
@@ -33,4 +34,4 @@ const noteShema = mongoose.Schema(
   },
 );
 
-export const Note = mongoose.model("Note", noteShema);
+export const Note = mongoose.model("Note", noteSchema);
