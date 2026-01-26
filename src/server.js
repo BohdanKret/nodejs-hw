@@ -4,10 +4,10 @@ import cors from 'cors';
 // import pino from 'pino-http';
 import { connectMongoDB } from './db/connectMongoDB.js';
 // import { Note } from './models/notes.js';
-import { notFoundHandler } from './middlelware/notFoundHandler.js';
-import { errorHandler } from './middlelware/errorHandler.js';
-import notesRouters from './routes/notesRouters.js';
-import { logger } from './middlelware/logger.js';
+import { notFoundHandler } from './middleware/notFoundHandler.js';
+import { errorHandler } from './middleware/errorHandler.js';
+import notesRouters from './routes/notesRoutes.js';
+import { logger } from './middleware/logger.js';
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;
